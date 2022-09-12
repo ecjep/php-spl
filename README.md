@@ -2,7 +2,7 @@
 Simple spl_auto_load_register
 
 
-spl_autoload_register(function($class) {
+   spl_autoload_register(function($class) {
 
     $cs = explode("\\",$class);
     $cr = [];
@@ -15,4 +15,4 @@ spl_autoload_register(function($class) {
         require_once $fileName;
 
     }
-});
+  });
